@@ -124,6 +124,7 @@ public class AllVsAll extends BaseEvent<AllVsAllEventConfig>
                 .addReward(1, getConfig().getReward())
                 .setScoreType(ScoreType.DEATH)
                 .setParticipants(listOrdered)
+                .setOrder(SortUtils.Order.ASCENDENT)
                 .distribute(AnnounceType.WINNER);
     }
 }
